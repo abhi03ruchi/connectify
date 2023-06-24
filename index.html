@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+   
+<link rel="stylesheet" href="style.css"/>
+
+    <title>Portfolio Generator</title>
+</head>
+<body>
+ <div class="container" id="cv-form">
+    <h1 class="text-center my-2">Portfolio Generator</h1>
+     <p class="text-center">By TrackTogether</p>
+    <div class="row align-items-center">
+        <div class="col-md-10">
+          <h3>Personal Information</h3>
+
+          <div class="form-group">
+           <label for="nameField" >Your Name</label>
+           <input 
+             type="text"
+             id="nameField"
+             placeholder="Enter here"
+             class="form-control"
+            />
+          </div>
+          <div class="form-group">
+            <label for="contactField" >Your Phone Number:</label>
+            <input 
+              type="text"
+              id="contactField"
+              placeholder="Enter here"
+              class="form-control"
+             />
+           </div>
+           <div class="form-group">
+            <label for="addressField" >Your Address</label>
+            <textarea 
+             
+              id="addressField"
+              placeholder="Enter here"
+              class="form-control"
+              rows="3"
+             ></textarea>
+           </div>
+
+           <div class="form-group mt-3">
+            <label for="" >Select your photo</label>
+            <input id="imgField" type="file" class="form-control">
+           </div>
+
+
+           <p class="text-secondary my-3"> Important Links</p>
+
+           <div class="form-group">
+            <label for="fbField" >Facebook</label>
+            <input 
+              type="text"
+              id="fbField"
+              placeholder="Enter here"
+              class="form-control"
+             />
+           </div>
+           <div class="form-group">
+            <label for="instaField" >Instagram</label>
+            <input 
+              type="text"
+              id="instaField"
+              placeholder="Enter here"
+              class="form-control"
+             />
+           </div>
+           <div class="form-group">
+            <label for="linkedField" >LinkedIn</label>
+            <input 
+              type="text"
+              id="linkedField"
+              placeholder="Enter here"
+              class="form-control"
+             />
+           </div>
+        </div>
+        <div class="col-md-10">
+           
+
+           
+           <div class="form-group mt-2">
+            <label for="" >Objective <Address></Address></label>
+            <textarea 
+             id="objectiveField"
+             rows="5"
+              placeholder="Enter here"
+              class="form-control "
+             
+             ></textarea>
+           </div>
+
+           <!-- project details from the form -->
+           <div class="form-group mt-2" id="we">
+            <h3>Projects Done:</h3>
+            <label for="" >Project Tittle: </label>
+            <textarea 
+             id="tittle"
+              placeholder="Enter here"
+              class="form-control weField "
+             
+             ></textarea>
+             <div class="form-group mt-3">
+                <label for="" >Select your photo</label>
+                <input id="projimg" accept="image/*" type="file" class="form-control project-image weField">
+               </div>
+    
+             <label for="" >Tech Stacks used: </label>
+            <textarea 
+             id="tech"
+              placeholder="Enter here"
+              class="form-control weField "
+             
+             ></textarea>
+             <label for="" >Discription: </label>
+            <textarea 
+             id="discrip"
+              placeholder="Enter here"
+              class="form-control weField "
+             
+             ></textarea>
+             <label for="" >Github Link: </label>
+            <textarea 
+             id="github"
+              placeholder="Enter here"
+              class="form-control weField "
+             
+             ></textarea>
+             <div class="container text-center mt-2 " id="weAddButton">
+            <button onclick="addNewWEField()" class="btn btn-primary btn-sm"> Add</button>
+            </div>
+           </div>
+            <!-- volunteer  details from the from -->
+            <div class="form-group mt-2" id="Ewe">
+                <h3>Volunteer / Speaker Involvement:</h3>
+                <label for="" >Name of the Event: </label>
+                <textarea 
+                 id="Etittle"
+                  placeholder="Enter here"
+                  class="form-control EweField "
+                 
+                 ></textarea>
+                 <div class="form-group mt-3">
+                    <label for="" >Select your photo</label>
+                    <input id="Eprojimg" accept="image/*" type="file" class="form-control  EweField">
+                   </div>
+        
+                 <label for="" >Role: </label>
+                <textarea 
+                 id="Etech"
+                  placeholder="for example Speaker/Organizer/ Volunteer etc."
+                  class="form-control EweField "
+                 
+                 ></textarea>
+                 <label for="" >Organized by: </label>
+                <textarea 
+                 id="discrip"
+                  placeholder="Enter here"
+                  class="form-control EweField "
+                 
+                 ></textarea>
+                 <label for="" >Venue: </label>
+                <textarea 
+                 id="Egithub"
+                  placeholder="Enter here"
+                  class="form-control EweField "
+                 
+                 ></textarea>
+                 <div class="container text-center mt-2 " id="EweAddButton">
+                <button onclick="EaddNewWEField()" class="btn btn-primary btn-sm"> Add</button>
+                </div>
+               </div>
+
+            <!-- Academic qualifications -->
+           <div class="form-group mt-2" id="aq">
+            <label for="" >Academic Qualification</label>
+            <textarea 
+             
+              placeholder="Enter here"
+              class="form-control aqField "
+             
+             ></textarea>
+             <div class="container text-center mt-2" id="aqAddButton">
+            <button onclick="addNewAQField()" class="btn btn-primary btn-sm"> Add</button>
+            </div>
+           </div>
+        </div>
+    </div> 
+    <div class="container text-center mt-3 mb-3"> 
+<button onclick="generateCV()" class="btn btn-primary btn-lg"> Generate Portfolio </button>
+    </div>
+ </div>   
+
+<div class="container  content-to-print" id="cv-template">
+    <div class="row my-3">
+        <div class="col-md-4  text-center py-5 background ">
+            <!-- first col -->
+             <img 
+             src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+             alt=" "
+             class="img-fluid myimg" 
+             id="imgTemplate"
+             />
+
+             <div class="container">
+                <p id="nameT1">Aman Kumar Tiwari</p>
+                <p id="contactT">+91-4530248400 , +91-8749769224</p>
+                <p id="addressT">90843/345355 Sector 35 Noida, INDIA</p>
+                <hr/>
+                <div class="container">
+                <p  class="col-md-4 mypara">
+                    
+                    <a id="fbT" href=""><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                        class="cdn-icons-png mt-3 mx-3  myicons "  
+                        /></a>
+                </p>
+                <p class="col-md-12 mypara">
+                    
+                    <a href=""  id="linkedT"><img src="https://cdn-icons-png.flaticon.com/512/61/61109.png?w=740&t=st=1687519202~exp=1687519802~hmac=3f3b87b4506de02eff709b4c9284e4f6e15156790780b656ef5e281a87163f60"
+                        class="cdn-icons-png mt-3 mx-3  myicons"  
+                        /></a>
+                </p>
+                <p class="col-md-18  mypara">
+                    
+                    <a id="instaT" href=""><img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/46-facebook-512.png"
+                        class="cdn-icons-png mt-3 mx-3 col-md-4 myicons"  
+                        /></a>
+                </p>
+            </div>
+             </div>
+        </div>
+        <div class="col-md-8">
+            <!-- second col -->
+            <h1 id="nameT2" class="text-center" style="font-weight: 900;">Aman kumar Tiwari</h1>
+            <!-- objective card -->
+            <div class="card">
+                <div class="card-header  background">
+                    <h3 class="text-center" style="font-weight: 500;">objective</h3>
+                </div>
+                <div id="objectiveT" class="card-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, corrupti! Eos ad perspiciatis iste veritatis incidunt beatae sapiente minima dolor voluptatibus nostrum, error reiciendis exercitationem voluptatum quae veniam quisquam, nam nulla facilis voluptas.
+                </div>
+            </div>
+            <!-- <div class="card my-3">
+                <div class="card-header  background">
+                    <h3>Work Experience<h3>
+                </div>
+                <div class="card-body">
+                   <ul id="weT">
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quisquam.
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quisquam.
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quisquam.
+                    </li>
+                   </ul>
+                </div>
+            </div> -->
+            <div class="card my-3">
+                <div class="card-header  background">
+                    <h3 class="text-center" style="font-weight: 500;">Academic Qualification<h3>
+                </div>
+                <div class="card-body">
+                   <ul id="aqT">
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quisquam.
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quisquam.
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, quisquam.
+                    </li>
+                   </ul>
+                </div>
+            </div>
+
+            <!-- project cards -->
+            <h3 class="text-center" style="font-weight: 500;"> Projects I have made in the past:</h3>
+            <div class="container" style="display: flex;">
+            <div class="card my-3 mx-3 ">
+                <img id="cardimg" src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"  id="proTittle1" >Project title1</h5>
+                  <p class="card-text" id="discripT1">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a  class="btn btn-primary" id="techT1">Ruby C++ JAVA</a>
+                  <a href=""  class="btn btn-primary" id="githubT1">Githublink</a>
+                </div>
+              </div>
+
+              <div class="card my-3 mx-3" >
+                <img id="" src="https://img.freepik.com/free-vector/collab-concept-illustration_114360-3960.jpg?w=740&t=st=1687604860~exp=1687605460~hmac=0873686033421b4d9f9617b0567df146af8f45a36f5afbf19bedc26f7874c8a9" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"  id="proTittle1" >Project title2</h5>
+                  <p class="card-text" id="discripT1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime tenetur dicta repudiandae blanditiis perferendis adipisci ratione est ipsum! Consequuntur, adipisci?</p>
+                  <a  class="btn btn-primary" id="techT1">Html JAVA</a>
+                  <a href=""  class="btn btn-primary" id="githubT1">Githublink</a>
+                </div>
+              </div>
+
+            </div>
+            
+
+            <h3 class="text-center" style="font-weight: 500;"> My Volunteer involvement and Speaker Enagement</h3>
+            <div class="container" style="display: flex;">
+            <div class="card my-3 mx-3 ">
+                <img  src="https://img.freepik.com/free-photo/image-by-rawpixel-com_53876-165282.jpg?w=740&t=st=1687605883~exp=1687606483~hmac=dde857d704916f9df6d3ddff3dc266537069a13f43903918580a032c3a3f7544" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"  id="proTittle1" >Event1</h5>
+                  <p class="card-text" id="discripT1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nam numquam omnis reiciendis eaque id animi aut recusandae inventore praesentium.</p>
+                  <a  class="btn btn-primary" id="techT1">Speaker </a>
+                  <a href=""  class="btn btn-primary" id="githubT1">Faridabad</a>
+                </div>
+              </div>
+
+              <div class="card my-3 mx-3" >
+                <img id="" src="https://img.freepik.com/free-vector/gradient-halftone-technology-webinar_23-2149078605.jpg?w=740&t=st=1687605918~exp=1687606518~hmac=8dec7fca20870ce8ad4f28d9bb7dff85a33d851160eca77d0c2b3e9b94af5bb6" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"  id="proTittle1" >Event2</h5>
+                  <p class="card-text" id="discripT1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime tenetur dicta repudiandae blanditiis perferendis adipisci ratione est ipsum! Consequuntur, adipisci?</p>
+                  <a  class="btn btn-primary" id="techT1">Organizer</a>
+                  <a href=""  class="btn btn-primary" id="githubT1">New Delhi</a>
+                </div>
+              </div>
+
+            </div>
+            <!-- print button -->
+            <div class="container mt-3 text-center">
+                <button onclick="printCV('printableArea')" class="btn background">
+                    Print 
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
