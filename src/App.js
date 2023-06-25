@@ -15,13 +15,10 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<Home />} />
-<<<<<<< HEAD
             <Route path="/signin" element={<Login/>}/>
             <Route path="/dashboard" element={<Dashboard/>}/>
-=======
             <Route path='/FindMate' element={<FindMate />} />
             {/* <Route path='/Portfolio' element={<Portfolio />} /> */}
->>>>>>> 4a8c1e8150eeb7886fbcfc841cd6e75bc85e9770
           </Routes>
         </BrowserRouter>
  
