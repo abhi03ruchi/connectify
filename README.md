@@ -4,7 +4,6 @@
 <table style="border: none;">
   <tr>
     <td>Connectify is an ultimate team-building and collaboration platform designed to empower women in the tech community. With Connectify, you can seamlessly connect with like-minded individuals, build diverse teams, and amplify your impact in hackathons. </td>
-    <td>(https://github.com/abhi03ruchi/Pryde/assets/105661636/dd8cabe4-4bea-484a-8720-a906b094b5f7)</td> 
   </tr>
 </table>
 
