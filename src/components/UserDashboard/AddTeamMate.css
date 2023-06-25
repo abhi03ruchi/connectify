@@ -1,0 +1,28 @@
+.teammate{
+    margin-bottom: 1rem;
+}
+.Description{
+    display: inline-block;
+    color:white;
+}
+.teammate h1{
+    display: inline-block;
+ font-size: 1.2rem;
+ margin-bottom: 0rem;
+ color:white;
+}
+
+.teammate img{
+    display: inline-block;
+    margin-right:1.5rem;
+    width:2.5rem;
+    height:2.5rem;
+    border-radius: 50%;
+}
+.teammate button{
+    border-radius: 50%;
+    margin-left: 2rem;
+    background-color: rgb(188, 188, 249);
+    border: none;
+    font-size: 1.1rem;
+}
