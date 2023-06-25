@@ -1,0 +1,15 @@
+.achievement h4{
+color:white;
+margin-bottom: 0.2rem;
+}
+.achievement input{
+    width:220px;
+    height:40px;
+}
+.achievement button{
+    background-color: rgb(177, 177, 250);
+    border:none;
+    padding:7px;
+    margin-top: 1rem;
+    border-radius: 2px;
+}

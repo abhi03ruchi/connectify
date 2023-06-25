@@ -1,0 +1,54 @@
+.homedash{
+  margin-top: 0rem;
+  margin-left: 0rem;
+  width:100vw;
+  height:100vh;
+  background-color: rgb(162, 162, 247);
+  overflow: hidden;
+}
+.navdash a{
+  color:black;
+  position: absolute;
+  top:5rem;
+  left:1.5rem;
+  font-size:1.5rem;
+}
+.hackathons{
+    position: absolute;
+    left:16rem;
+    top:1rem;
+  }
+  .teammates{
+    position: absolute;
+    right:10rem;
+    bottom:2rem;
+  }
+  .teammates h1{
+    font-size: 1.5rem;
+    color: rgb(135, 135, 249);
+    margin-bottom: 0rem;
+  }
+  .hackathons h1{
+    font-size: 1.5rem;
+    color: rgb(135, 135, 249);
+    margin-left: 1rem;
+  }
+  .calendar{
+    position: absolute;
+    top:1rem;
+    right:0rem;
+    width:40vw;
+    height:10vh;
+  }
+  .calendar h1{
+    font-size: 1.5rem;
+    color: rgb(135, 135, 249);
+    margin-left: 7rem;
+  }
+  .dashboard{
+    background-color: white;
+    border-radius:10px;
+    height:101vh;
+    width:90vw;
+    margin-left: 15vw;
+  }
