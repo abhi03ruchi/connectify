@@ -124,6 +124,12 @@ img {
   margin-bottom: var(--mb-1);
 }
 
+.bd-contain{
+  margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
 /*========== LAYOUT ==========*/
 .l-main {
   overflow: hidden;
@@ -233,7 +239,7 @@ img {
 
 /*========== DECORATION ==========*/
 .decoration__container {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .decoration__data {
@@ -243,6 +249,9 @@ img {
   box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 1rem;
 }
+.decoration__data p {
+  height: 150px;
+}
 
 .decoration__data:hover {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.429);
@@ -251,20 +260,32 @@ img {
 .decoration__img {
   width: 180px;
 }
+#render{
+  width: 250px;
+  height: 250px;
+  /* border-radius: 10px;
+  margin-bottom: 1.3rem; */
+}
 
 #apple_render {
   width: 400px;
+  height: 250px;
+  border-radius: 10px;
   margin-bottom: 1.3rem;
 }
 
 #burger_render {
-  width: 300px;
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
   margin-bottom: 1.3rem;
-  margin-left: 3rem;
+  /* margin-left: 3rem; */
 }
 
 #milk_render {
   width: 300px;
+  height: 250px;
+  border-radius: 10px;
   margin-bottom: 1.3rem;
 }
 
