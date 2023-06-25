@@ -1,0 +1,112 @@
+.footer-main {
+    /* background-color: #fefbfb; */
+    /* color: black; */
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.footer-section {
+    margin-top: 45px;
+    width: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-section a{
+    text-decoration: none;
+}
+.footer-section h1{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.footer-moto {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    text-align: center;
+}
+
+.footer-social {
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.footer-a {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: black;
+}
+
+.footer-a:hover {
+    --transform-scale-x: 1.1;
+    --transform-scale-y: 1.1;
+}
+
+.footer-copyRight {
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.025em;
+    text-align: center;
+    /* background-color: #8f8a8a; */
+
+}
+
+.footer-a .icon {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.footer-a .mail:hover {
+    color: #007BFF;
+}
+
+.footer-a .github:hover {
+    color: #000000;
+}
+
+.footer-a .insta:hover {
+    color:  #C13584;
+}
+
+.footer-a .linkedin:hover {
+    color:#0A66C2 ;
+}
+.footer-a .twitter:hover{
+    color:#1DA1F2 ;
+}
+
+
+/* LinkedIn:
+Blue: #0A66C2
+Dark Blue: #2867B2
+Instagram:
+
+Purple: #C13584
+Dark Pink: #E4405F
+GitHub:
+
+Black: #000000
+Light Gray: #6e6e6e
+Email:
+
+Blue: #007BFF
+Light Blue: #4dabf7
+Twitter:
+
+Blue: #1DA1F2
+Light Blue: #50b7f5 */
