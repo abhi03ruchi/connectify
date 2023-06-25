@@ -13,7 +13,7 @@ const Navbar = () => {
                             <li className="nav__item"><a href='#home' className="nav__link ">About</a></li>
                             <li className="nav__item"><a href='#features' className="nav__link ">Features</a></li>
                             <li className="nav__item"><a href='#team' className="nav__link ">Team</a></li>
-                            <li className="nav__item"><Link to='/' className="nav__link">User DashBoard</Link></li>
+                            <li className="nav__item"><Link to='/dashboard' className="nav__link">User DashBoard</Link></li>
                         </ul>
                     </div>
                     <Toggle/>

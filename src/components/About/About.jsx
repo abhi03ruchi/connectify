@@ -77,7 +77,7 @@ const About = () => {
             <img src={f3} alt="" className="decoration__img" id="milk_render" />
             <h3 className="decoration__title">User DashBoard</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem saepe omnis dicta laboriosam alias autem.</p>
-            <div className="button"><Link to="./" className="button-link" style={{ color: 'white' }}>Explore</Link></div>
+            <div className="button"><Link to="/dashboard" className="button-link" style={{ color: 'white' }}>Explore</Link></div>
           </div>
         </div>
       </section>
